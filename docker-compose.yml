@@ -1,0 +1,8 @@
+services:
+  authenticator:
+    build: .
+    environment:
+      - DB_HOST=mein-sicherer-server.local
+      - DB_USER=admin
+      - DB_PASSWORD=administhebest
+      
