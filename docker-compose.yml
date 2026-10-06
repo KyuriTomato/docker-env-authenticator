@@ -1,8 +1,8 @@
 services:
-  authenticator:
+  sortierer:
     build: .
-    environment:
-      - DB_HOST=mein-sicherer-server.local
-      - DB_USER=admin
-      - DB_PASSWORD=administhebest
-      
+    volumes:
+      - db_daten:/data # Hier wird die kleine Datenbank-Datei sicher auf deinem PC gespeichert!
+
+volumes:
+  db_daten:
